@@ -11,8 +11,8 @@ sources:
     tables:
       - name: account_manager_region_mapping
 
-  - name: sales_database
-    schema: sales_database
+  - name: dataset_fil_rouge
+    schema: dataset_fil_rouge
     tables:
       - name: feedback
       - name: payment
