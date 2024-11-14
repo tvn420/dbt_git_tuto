@@ -40,7 +40,7 @@ models:
       relation: true
       columns: true
       
-  my_first_dbt_project:
+  dbt_git_tuto:
 
     staging:
       materialized: view
