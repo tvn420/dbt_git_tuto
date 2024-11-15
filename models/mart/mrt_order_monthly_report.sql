@@ -1,5 +1,5 @@
 SELECT 
-	DATE_TRUNC(order_created_at, MONTH) AS reporting_date,
+	DATE_TRUNC(order_created_at, MONTH) AS report_date,
 	1 AS column_1,
   2 AS column_2,
     mapping.account_manager,
