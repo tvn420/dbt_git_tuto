@@ -11,3 +11,5 @@ LEFT JOIN {{ ref('stg_google_sheets__account_manager_region_mapping') }} as mapp
 GROUP BY report_date,
     account_manager,
     state
+
+    -- test commit and merge
