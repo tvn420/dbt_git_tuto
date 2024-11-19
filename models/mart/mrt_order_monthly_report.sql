@@ -17,10 +17,6 @@ SELECT DATE_TRUNC(order_date,month) AS order_month,
 COUNT(order_id) AS total_monthly_orders
 FROM dataset_fil_rouge.order
 GROUP BY order_month
-), shipping_cost AS (
-SELECT shipping_cost
-FROM dataset_fil_rouge.order_item
-WHERE price > 7000
 )
 SELECT u.order_month,
 COALESCE(u.total_monthly_users,0),
