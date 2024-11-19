@@ -1,11 +1,11 @@
-select CONCAT(order_id, '_', product_id) AS order_item_id_x,
- order_id_x,
- product_id_x,
- seller_id_x,
- DATETIME(pickup_limit_date, "Europe/Paris") AS picked_up_limited_at_y,
- price as unit_price_x,
- shipping_cost_x,
- quantity as item_quantity_x,
- (price * quantity) + shipping_cost as total_order_item_amount_x
+select CONCAT(order_id, '_', product_id) AS order_item_id,
+ order_id,
+ product_id,
+ seller_id,
+ DATETIME(pickup_limit_date, "Europe/Paris") AS picked_up_limited_at,
+ price as unit_price,
+ shipping_cost,
+ quantity as item_quantity,
+ (price * quantity) + shipping_cost as total_order_item_amount
 
 from {{ source('dataset_fil_rouge', 'order_item') }}
